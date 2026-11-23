@@ -1,0 +1,23 @@
+#EXTM3U name="bj-unicom-iptv" x-tvg-url="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/epg.xml.gz"
+#EXTINF:-1 channel-number="54" tvg-id="54" tvg-name="四川卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/SiChuan.png" group-title="卫视" zz-definition="HD",四川卫视高清
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226221/422332212.smil
+#EXTINF:-1 channel-number="59" tvg-id="59" tvg-name="河南卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HeNan.png" group-title="卫视" zz-definition="HD" catchup="default" catchup-source="http://192.168.5.1:8080/rtsp/61.135.88.136/TVOD/88888892/224/3221226156/10000100000000060000000001276309_0.smil?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",河南卫视高清
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226156/10000100000000060000000001276309_0.smil
+#EXTINF:-1 channel-number="60" tvg-id="60" tvg-name="海南卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HaiNan.png" group-title="卫视" zz-definition="HD",海南卫视高清
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226227/422333129.smil
+#EXTINF:-1 channel-number="61" tvg-id="61" tvg-name="陕西卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/ShaanXi.png" group-title="卫视" zz-definition="HD" catchup="default" catchup-source="http://192.168.5.1:8080/rtsp/61.135.88.136/TVOD/88888892/224/3221226223/422332704.smil?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",陕西卫视高清
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226223/422332704.smil
+#EXTINF:-1 channel-number="75" tvg-id="75" tvg-name="内蒙古卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/NeiMengGu.png" group-title="卫视" zz-definition="HD" catchup="default" catchup-source="http://192.168.5.1:8080/rtsp/61.135.88.136/TVOD/88888892/224/3221226225/422332751.smil?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",内蒙古卫视高清
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226225/422332751.smil
+#EXTINF:-1 channel-number="81" tvg-id="81" tvg-name="北京卫视4K超高清 SDR" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/BeiJing.png" group-title="北京超高清" zz-definition="UHD" zz-raw-name="BRTV北京卫视超高清SDR",北京卫视4K超高清 SDR
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226182/390398577.smil
+#EXTINF:-1 channel-number="85" tvg-id="85" tvg-name="CCTV4K超高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/CCTV/CCTV-4K.png" group-title="央视超高清" zz-definition="UHD",CCTV4K超高清
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226172/10000100000000060000000001785134_0.smil
+#EXTINF:-1 channel-number="349" tvg-id="349" tvg-name="重温经典" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/QiTa/IPTV_ChongWenJingDian.png" group-title="轮播" zz-definition="HD",重温经典
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226213/406750667.smil
+#EXTINF:-1 channel-number="406" tvg-id="406" tvg-name="广东卫视4K超高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/GuangDong.png" group-title="卫视超高清" zz-definition="UHD",广东卫视4K超高清
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226215/407059592.smil
+#EXTINF:-1 channel-number="408" tvg-id="408" tvg-name="深圳卫视4K超高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/ShenZhen.png" group-title="卫视超高清" zz-definition="UHD",深圳卫视4K超高清
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226212/407058192.smil
+#EXTINF:-1 channel-number="421" tvg-id="421" tvg-name="北京卫视4K超高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/BeiJing.png" group-title="北京超高清" zz-definition="UHD" zz-raw-name="BRTV北京卫视超高清HDR",北京卫视4K超高清
+http://192.168.5.1:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226184/391328653.smil
