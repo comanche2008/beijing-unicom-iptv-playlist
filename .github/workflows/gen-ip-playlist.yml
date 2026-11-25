@@ -24,19 +24,70 @@ jobs:
             sed 's/iptv\.local/192.168.5.1/g' "$f" > "$out"
             echo "generated $out from $f"
           done
-      - name: Add header-level catchup to timeshift IP playlist
+      - name: Merge TVOD catchup-source into timeshift IP playlist
         run: |
           f="iptv-unicast-timeshift-ts2hls-ip.m3u"
-          if [ -f "$f" ]; then
-            # Drop the 3 dead per-channel TVOD catchup attributes so all
-            # channels use the header template below
-            sed -i -E 's/ catchup="default" catchup-source="[^"]*"//g' "$f"
-            # Header-level catchup: APTV appends ?playseek=<start>-<end>
-            # to the stream URL when the user picks a past programme
-            sed -i '1s/$/ catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"/' "$f"
-            echo "added catchup header to $f"
-            head -1 "$f"
-          fi
+          if [ ! -f "$f" ]; then echo "$f not found, skipping"; exit 0; fi
+          curl -sL -o /tmp/iptv_tvod.m3u "https://raw.githubusercontent.com/comanche2008/iptv/refs/heads/main/iptv-unicast-timeshift-ts2hls.m3u"
+          if ! head -1 /tmp/iptv_tvod.m3u | grep -q '^#EXTM3U'; then echo "iptv repo playlist download failed, skipping TVOD merge"; exit 0; fi
+          python3 - "$f" /tmp/iptv_tvod.m3u << 'PYEOF'
+          import re, sys
+          target, src = sys.argv[1], sys.argv[2]
+          def parse(path):
+              with open(path, encoding='utf-8') as fh:
+                  lines = fh.read().splitlines()
+              entries = []
+              i = 0
+              while i < len(lines):
+                  if lines[i].startswith('#EXTINF'):
+                      entries.append((lines[i], lines[i+1] if i+1 < len(lines) else ''))
+                      i += 2
+                  else:
+                      i += 1
+              return entries
+          def tvg(e):
+              m = re.search(r'tvg-id="([^"]*)"', e)
+              return m.group(1) if m else None
+          def cname(e):
+              return e.rsplit(',', 1)[-1].strip()
+          def csrc(e):
+              m = re.search(r'catchup-source="([^"]*)"', e)
+              return m.group(1) if m else None
+          by_tvg, by_name = {}, {}
+          for e, _ in parse(src):
+              s = csrc(e)
+              if s:
+                  if tvg(e):
+                      by_tvg[tvg(e)] = s
+                  by_name[cname(e)] = s
+          with open(target, encoding='utf-8') as fh:
+              tlines = fh.read().splitlines()
+          out, n = [], 0
+          for line in tlines:
+              if line.startswith('#EXTM3U'):
+                  line = re.sub(r'\s+catchup="[^"]*"', '', line)
+                  line = re.sub(r'\s+catchup-source="[^"]*"', '', line)
+                  out.append(line)
+                  continue
+              if line.startswith('#EXTINF'):
+                  line = re.sub(r'\s+catchup="[^"]*"', '', line)
+                  line = re.sub(r'\s+catchup-source="[^"]*"', '', line)
+                  s = by_tvg.get(tvg(line)) or by_name.get(cname(line))
+                  if s:
+                      head, _, nm = line.rpartition(',')
+                      line = head + ' catchup="default" catchup-source="' + s + '",' + nm
+                      n += 1
+                  out.append(line)
+                  continue
+              out.append(line)
+          with open(target, 'w', encoding='utf-8') as fh:
+              fh.write('\n'.join(out) + '\n')
+          print(f"merged TVOD catchup-source into {n} channels")
+          PYEOF
+          echo "--- verify ---"
+          head -1 "$f"
+          echo "channels with catchup-source: $(grep -c 'catchup-source=' "$f")"
+          echo "channels total: $(grep -c '^#EXTINF' "$f")"
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
