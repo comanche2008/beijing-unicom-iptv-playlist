@@ -61,6 +61,14 @@ http://iptv.local:8080/rtp/239.3.1.159:8000
 http://iptv.local:8080/rtp/239.3.1.180:8001
 #EXTINF:-1 channel-number="36" tvg-id="36" tvg-name="求索4K" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/QiTa/HCRT_QiuSuoJiLu4K.png" group-title="体验" zz-definition="UHD",求索4K
 http://iptv.local:8080/rtp/239.3.1.107:8001
+#EXTINF:-1 channel-number="422" tvg-id="422" tvg-name="求索纪录" tvg-logo="https://raw.githubusercontent.com/comanche2008/beijing-unicom-iptv-playlist/refs/heads/main/img/QiTa/HCRT_QiuSuoJiLu.png" group-title="体验" zz-definition="HD",求索纪录
+http://192.187.124.34:81/live/qsjl.m3u8
+#EXTINF:-1 channel-number="423" tvg-id="423" tvg-name="求索动物" tvg-logo="https://raw.githubusercontent.com/comanche2008/beijing-unicom-iptv-playlist/refs/heads/main/img/QiTa/HCRT_QiuSuoDongWu.png" group-title="体验" zz-definition="HD",求索动物
+http://192.187.124.34:81/live/qsdw.m3u8
+#EXTINF:-1 channel-number="424" tvg-id="424" tvg-name="求索科学" tvg-logo="https://raw.githubusercontent.com/comanche2008/beijing-unicom-iptv-playlist/refs/heads/main/img/QiTa/HCRT_QiuSuoKeXue.png" group-title="体验" zz-definition="HD",求索科学
+http://192.187.124.34:81/live/qskx.m3u8
+#EXTINF:-1 channel-number="425" tvg-id="425" tvg-name="求索生活" tvg-logo="https://raw.githubusercontent.com/comanche2008/beijing-unicom-iptv-playlist/refs/heads/main/img/QiTa/HCRT_QiuSuoShengHuo.png" group-title="体验" zz-definition="HD",求索生活
+http://192.187.124.34:81/live/qssh.m3u8
 #EXTINF:-1 channel-number="37" tvg-id="37" tvg-name="淘剧场" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/QiTa/BJIPTV_TaoJuChang.png" group-title="轮播" zz-definition="HD",淘剧场
 http://iptv.local:8080/rtp/239.3.1.95:8001
 #EXTINF:-1 channel-number="38" tvg-id="38" tvg-name="淘电影" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/QiTa/BJIPTV_TaoDianYing.png" group-title="轮播" zz-definition="HD",淘电影
