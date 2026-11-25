@@ -1,4 +1,4 @@
-#EXTM3U name="bj-unicom-iptv" x-tvg-url="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/epg.xml.gz"
+#EXTM3U name="bj-unicom-iptv" x-tvg-url="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/epg.xml.gz" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 #EXTINF:-1 channel-number="1" tvg-id="1" tvg-name="CCTV-1高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/CCTV/CCTV-1.png" group-title="央视" zz-definition="HD",CCTV-1高清
 http://192.168.5.1:8080/rtp/239.3.1.129:8008
 #EXTINF:-1 channel-number="2" tvg-id="2" tvg-name="CCTV-2高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/CCTV/CCTV-2.png" group-title="央视" zz-definition="HD",CCTV-2高清
@@ -103,11 +103,11 @@ http://192.168.5.1:8080/rtp/239.3.1.156:8148
 http://192.168.5.1:8080/rtp/239.3.1.122:8160
 #EXTINF:-1 channel-number="58" tvg-id="58" tvg-name="江西卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/JiangXi.png" group-title="卫视" zz-definition="HD",江西卫视高清
 http://192.168.5.1:8080/rtp/239.3.1.123:8164
-#EXTINF:-1 channel-number="59" tvg-id="59" tvg-name="河南卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HeNan.png" group-title="卫视" zz-definition="HD" catchup="default" catchup-source="http://61.135.88.136/TVOD/88888892/224/3221226156/10000100000000060000000001276309_0.smil/index.m3u8?fmt=ts2hls&playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",河南卫视高清
+#EXTINF:-1 channel-number="59" tvg-id="59" tvg-name="河南卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HeNan.png" group-title="卫视" zz-definition="HD",河南卫视高清
 http://192.168.5.1:8080/rtp/239.3.1.50:8184
 #EXTINF:-1 channel-number="60" tvg-id="60" tvg-name="海南卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HaiNan.png" group-title="卫视" zz-definition="HD",海南卫视高清
 http://192.168.5.1:8080/rtp/239.3.1.205:8228
-#EXTINF:-1 channel-number="61" tvg-id="61" tvg-name="陕西卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/ShaanXi.png" group-title="卫视" zz-definition="HD" catchup="default" catchup-source="http://61.135.88.136/TVOD/88888892/224/3221226223/422332704.smil/index.m3u8?fmt=ts2hls&playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",陕西卫视高清
+#EXTINF:-1 channel-number="61" tvg-id="61" tvg-name="陕西卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/ShaanXi.png" group-title="卫视" zz-definition="HD",陕西卫视高清
 http://192.168.5.1:8080/rtp/239.3.1.203:8220
 #EXTINF:-1 channel-number="62" tvg-id="62" tvg-name="甘肃卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/GanSu.png" group-title="卫视" zz-definition="HD",甘肃卫视高清
 http://192.168.5.1:8080/rtp/239.3.1.201:8180
@@ -135,7 +135,7 @@ http://192.168.5.1:8080/rtp/239.3.1.142:8048
 http://192.168.5.1:8080/rtp/239.3.1.148:8072
 #EXTINF:-1 channel-number="74" tvg-id="74" tvg-name="深圳卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/ShenZhen.png" group-title="卫视" zz-definition="HD",深圳卫视高清
 http://192.168.5.1:8080/rtp/239.3.1.134:8020
-#EXTINF:-1 channel-number="75" tvg-id="75" tvg-name="内蒙古卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/NeiMengGu.png" group-title="卫视" zz-definition="HD" catchup="default" catchup-source="http://61.135.88.136/TVOD/88888892/224/3221226225/422332751.smil/index.m3u8?fmt=ts2hls&playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",内蒙古卫视高清
+#EXTINF:-1 channel-number="75" tvg-id="75" tvg-name="内蒙古卫视高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/NeiMengGu.png" group-title="卫视" zz-definition="HD",内蒙古卫视高清
 http://192.168.5.1:8080/rtp/239.3.1.204:8224
 #EXTINF:-1 channel-number="76" tvg-id="76" tvg-name="CETV1高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/QiTa/CETV-1.png" group-title="卫视" zz-definition="HD",CETV1高清
 http://192.168.5.1:8080/rtp/239.3.1.57:8152
