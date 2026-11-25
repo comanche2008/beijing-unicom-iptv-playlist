@@ -335,3 +335,27 @@ http://iptv.local:8080/rtp/239.3.1.144:3005
 http://iptv.local:8080/rtp/239.3.1.131:3001
 #EXTINF:-1 channel-number="421" tvg-id="421" tvg-name="北京卫视4K超高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/BeiJing.png" group-title="北京超高清" zz-definition="UHD" zz-raw-name="BRTV北京卫视超高清HDR",北京卫视4K超高清
 http://iptv.local:8080/rtp/239.3.1.118:8001
+#EXTINF:-1 channel-number="426" tvg-id="426" tvg-name="华数传媒1[高清]" group-title="华数传媒" zz-definition="HD",华数传媒1[高清]
+http://iptv.local:8080/rtp/239.2.1.67:4120
+#EXTINF:-1 channel-number="427" tvg-id="427" tvg-name="华数传媒2[高清]" group-title="华数传媒" zz-definition="HD",华数传媒2[高清]
+http://iptv.local:8080/rtp/239.2.1.68:4120
+#EXTINF:-1 channel-number="428" tvg-id="428" tvg-name="华数传媒3[高清]" group-title="华数传媒" zz-definition="HD",华数传媒3[高清]
+http://iptv.local:8080/rtp/239.2.1.69:4120
+#EXTINF:-1 channel-number="429" tvg-id="429" tvg-name="华数传媒4[高清]" group-title="华数传媒" zz-definition="HD",华数传媒4[高清]
+http://iptv.local:8080/rtp/239.2.1.74:4120
+#EXTINF:-1 channel-number="430" tvg-id="430" tvg-name="华数传媒5[高清]" group-title="华数传媒" zz-definition="HD",华数传媒5[高清]
+http://iptv.local:8080/rtp/239.2.1.80:4120
+#EXTINF:-1 channel-number="431" tvg-id="431" tvg-name="华数传媒6[高清]" group-title="华数传媒" zz-definition="HD",华数传媒6[高清]
+http://iptv.local:8080/rtp/239.2.1.84:4120
+#EXTINF:-1 channel-number="432" tvg-id="432" tvg-name="华数传媒7[高清]" group-title="华数传媒" zz-definition="HD",华数传媒7[高清]
+http://iptv.local:8080/rtp/239.2.1.90:4120
+#EXTINF:-1 channel-number="433" tvg-id="433" tvg-name="华数传媒8[高清]" group-title="华数传媒" zz-definition="HD",华数传媒8[高清]
+http://iptv.local:8080/rtp/239.2.1.91:4120
+#EXTINF:-1 channel-number="434" tvg-id="434" tvg-name="华数传媒9[高清]" group-title="华数传媒" zz-definition="HD",华数传媒9[高清]
+http://iptv.local:8080/rtp/239.2.1.92:4120
+#EXTINF:-1 channel-number="435" tvg-id="435" tvg-name="华数传媒10[高清]" group-title="华数传媒" zz-definition="HD",华数传媒10[高清]
+http://iptv.local:8080/rtp/239.2.1.93:4120
+#EXTINF:-1 channel-number="436" tvg-id="436" tvg-name="华数传媒11[高清]" group-title="华数传媒" zz-definition="HD",华数传媒11[高清]
+http://iptv.local:8080/rtp/239.2.1.94:4120
+#EXTINF:-1 channel-number="437" tvg-id="437" tvg-name="华数传媒4K" tvg-logo="https://raw.githubusercontent.com/wanglindl/TVlogo/main/img/huashu4k.png" group-title="华数传媒" zz-definition="UHD",华数传媒4K
+http://iptv.local:8080/rtp/239.2.1.236:2000
